@@ -1,0 +1,12 @@
+criterion,observed,verdict
+Independent events >= 30,92,PASS
+Bootstrap CI of excess return over baseline excludes 0,"[-1.0455%, 0.9339%]",FAIL
+Mean NET return per trade > 0 after costs,-0.0304%,FAIL
+Placebo p (random days) < 0.05,0.5813,FAIL
+Placebo p (random HIGH-VOL days) < 0.05,0.5017,FAIL
+Primary cell survives Holm correction over the whole grid (< 0.05),1.0000,FAIL
+"Excess > 0 under: Excluding crisis windows (GFC, COVID)",-0.0856%,FAIL
+Excess > 0 under: No de-clustering (overlapping events),0.1368%,PASS
+Excess > 0 under: Vol-adjusted event (z <= z_threshold),0.5911%,PASS
+OUT-OF-SAMPLE: mean net return > 0,-0.2073%,FAIL
+OUT-OF-SAMPLE: excess over baseline > 0,-0.2173%,FAIL

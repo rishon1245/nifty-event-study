@@ -1,0 +1,16 @@
+,Research,Out-of-sample
+sample,2007-09-17 -> 2017-12-21,2018-01-02 -> 2026-09-11
+independent events,92,39
+events / year (raw),14.13053629,6.32915879
+mean net return,-0.000304115,-0.002073162
+mean gross return,0.000695885,-0.001073162
+baseline mean (gross),0.001306718,0.001099658
+excess vs baseline,-0.000610834,-0.002172819
+win rate (gross),0.5,0.487179487
+baseline win rate,0.543426295,0.534048507
+excess CI low,-0.010454691,-0.018052142
+excess CI high,0.009339412,0.011248378
+p excess (one-sided t),0.549198571,0.612543702
+p placebo (all days),0.581341866,0.733226677
+market ann. vol,0.232078767,0.168919708
+market mean daily ret (bps),4.42465751,4.29503518

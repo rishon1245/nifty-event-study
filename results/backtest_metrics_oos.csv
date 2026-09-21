@@ -1,0 +1,16 @@
+,strategy,buy_and_hold
+total_return,-0.118549633,1.243684239
+cagr,-0.014371128,0.097135565
+ann_vol,0.100621935,0.168761649
+sharpe,-0.095671767,0.646678146
+max_drawdown,-0.354541566,-0.384398525
+max_drawdown_date,24-03-2020 00:00,23-03-2020 00:00
+calmar,-0.040534394,0.252694948
+n_trades,39,
+exposure_fraction_of_days,0.072591903,
+win_rate_net,0.487179487,
+avg_trade_net,-0.002071629,
+median_trade_net,-0.00106867,
+profit_factor,0.867043874,
+worst_trade,-0.181226126,
+trades_truncated_at_end,0,

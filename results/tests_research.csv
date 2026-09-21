@@ -1,0 +1,25 @@
+,value
+n_events_raw,145
+n_events_independent,92
+reliable(n>=min_events),True
+mean_gross,0.0006958846181880109
+mean_net,-0.00030411538181198994
+baseline_mean_gross,0.0013067183298931307
+excess_mean_gross,-0.0006108337117051198
+cohens_d_vs_baseline,-0.012926032415007793
+t_stat_net_vs_zero,-0.06172691092269256
+p_net_gt_zero(one-sided t),0.5245421591903938
+t_stat_excess,-0.1239821474545128
+p_excess(one-sided t),0.5491985712524763
+p_excess(two-sided t),0.9016028574950473
+p_excess(Wilcoxon),0.5217373903433443
+boot_ci_mean_net_low,-0.0100377738689043
+boot_ci_mean_net_high,0.009370059354969202
+boot_ci_excess_low,-0.010454690993931948
+boot_ci_excess_high,0.009339411581263519
+p_excess(block-bootstrap),0.5435456454354565
+p_placebo(all days),0.5813418658134186
+p_placebo(high-vol days),0.5017498250174982
+event_win_rate,0.5
+baseline_win_rate,0.5434262948207171
+p_win_rate_gt_baseline(binomial),0.8266809852353963
