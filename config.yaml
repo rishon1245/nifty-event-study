@@ -1,0 +1,48 @@
+# ----------------------------------------------------------------------------
+# NIFTY 50 post-fall reversal study - experiment configuration.
+# Everything the research engine does is driven from here.
+# ----------------------------------------------------------------------------
+
+# Data --------------------------------------------------------------
+ticker: "^NSEI"
+data_start: "2007-09-17"
+data_end: null            # null = latest
+csv_path: null            # e.g. "data/raw/niftyindices_export.csv" to bypass Yahoo
+cache_path: "data/raw/nifty50_daily.csv"
+
+# Event definition --------------------------------------------------
+event_mode: fixed         # fixed | zscore | percentile
+threshold: -0.02          # fixed mode: close-to-close return <= -2 %
+z_threshold: -2.0         # zscore mode: return / trailing-vol <= -2
+percentile: 0.02          # percentile mode: worst 2 % of past returns
+vol_window: 60
+
+# Trade rules -------------------------------------------------------
+entry: next_open          # next_open (realistic) | event_close (optimistic, look-ahead risk)
+holding_days: 5
+decluster: true           # keep only non-overlapping events
+min_gap_days: null        # null -> equal to holding_days
+
+# Robustness grids (used only by the robustness section) -----------
+holding_grid: [1, 2, 3, 5, 10, 20]
+threshold_grid: [-0.01, -0.015, -0.02, -0.025, -0.03, -0.04]
+crisis_windows:
+  - ["2008-09-01", "2009-06-30"]
+  - ["2020-02-15", "2020-06-30"]
+
+# Costs, per side (bps) --------------------------------------------
+commission_bps: 2.0
+slippage_bps: 3.0
+
+# Train / out-of-sample split --------------------------------------
+split_date: "2018-01-01"  # research < split_date <= out-of-sample
+
+# Statistics --------------------------------------------------------
+alpha: 0.05
+n_boot: 10000
+n_placebo: 10000
+seed: 42
+min_events: 30
+
+# Backtest ----------------------------------------------------------
+initial_capital: 1000000
